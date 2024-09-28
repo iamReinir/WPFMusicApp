@@ -1,0 +1,35 @@
+@page
+@model PRN_Final.Pages_Playlist.IndexModel
+@{
+    ViewData["Title"] = "Playlists";
+}
+
+<h2>Playlists</h2>
+
+<p>
+    <a asp-page="./Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var playlist in Model.Playlists)
+        {
+            <tr>
+                <td>@playlist.Name</td>
+                <td>@playlist.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@playlist.Id">Details</a> |
+                    <a asp-page="./Edit" asp-route-id="@playlist.Id">Edit</a> |
+                    <a asp-page="./Delete" asp-route-id="@playlist.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

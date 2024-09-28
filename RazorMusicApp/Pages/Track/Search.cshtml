@@ -1,0 +1,119 @@
+﻿@page
+@model PRN_Final.Pages_Track.SearchModel
+@{
+    ViewData["Title"] = "Search Tracks";
+}
+
+<div class="container-fluid mt-5">
+    <h2 class="text-center mb-4">Discover Music</h2>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success text-center">
+            <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <form method="post" asp-page-handler="Search" class="mb-5">
+        <div class="input-group input-group-lg">
+            <input type="text" id="SearchQuery" name="SearchQuery" class="form-control" asp-for="SearchQuery" placeholder="Search for tracks..." />
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary h-100">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+        </div>
+    </form>
+
+    @if (Model.SearchResults != null && Model.SearchResults.Count > 0)
+    {
+        <div class="row">
+            @foreach (var track in Model.SearchResults)
+            {
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://i.ytimg.com/vi/@track.YouTubeId/maxresdefault.jpg" class="card-img-top" alt="@track.Title">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@track.Title</h5>
+                            <div id="player-@track.YouTubeId"></div>
+                            <div class="mt-auto">
+                                <div class="btn-group d-flex" role="group">
+                                    <button class="btn btn-outline-primary w-100 play-button" onclick="playVideo('@track.YouTubeId')">
+                                        <i class="fas fa-play"></i> Play
+                                    </button>
+                                    <button class="btn btn-outline-secondary w-100 pause-button" onclick="pauseVideo('@track.YouTubeId')">
+                                        <i class="fas fa-pause"></i> Pause
+                                    </button>
+                                    @track.YouTubeId
+                                </div>
+                                <form method="post" asp-page-handler="AddToPlaylist" asp-route-youtubeId="@Html.Encode(track.YouTubeId)" class="mt-2">
+                                    <button class="btn btn-success w-100" type="submit">
+                                        <i class="fas fa-plus"></i> Add to Playlist
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    console.log(@Html.Raw(Json.Serialize(track)));
+                </script>
+            }
+        </div>
+    }
+    else if (Model.SearchResults != null && Model.SearchResults.Count == 0)
+    {
+        <div class="alert alert-info text-center">
+            <i class="fas fa-info-circle"></i> No results found for "@Model.SearchQuery". Try a different search.
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        var players = {};
+
+        function onYouTubeIframeAPIReady() {
+            @if (Model.SearchResults != null && Model.SearchResults.Any())
+            {
+                foreach (var track in Model.SearchResults)
+                {
+                    <text>
+                    players['@track.YouTubeId'] = new YT.Player('player-@track.YouTubeId', {
+                        height: '0',
+                        width: '0',
+                        videoId: '@track.YouTubeId',
+                        events: {
+                            'onReady': function(event) {
+                                console.log('Player ready for @track.YouTubeId');
+                            }
+                        }
+                    });
+                    </text>
+                }
+            }
+        }
+
+        function playVideo(playerId) {
+            var player = players[playerId];
+            if (player && player.playVideo) {
+                player.playVideo();
+            } else {
+                console.error('Player not found for:', playerId);
+            }
+        }
+
+        function pauseVideo(playerId) {
+            var player = players[playerId];
+            if (player && player.pauseVideo) {
+                player.pauseVideo();
+            } else {
+                console.error('Player not found for:', playerId);
+            }
+        }
+
+        // Ensure onYouTubeIframeAPIReady is called
+        if (typeof YT !== 'undefined' && YT && YT.loaded) {
+            onYouTubeIframeAPIReady();
+        }
+    </script>
+}

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\#Reinir\\Code\\CSharp\\PRNProjectTeam4\\SoundRockWebAPI\\wwwroot\\mpeg\\sousei.mp3",
+      "PackagePath": "staticwebassets\\mpeg\\sousei.mp3"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SoundRockWebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SoundRockWebAPI.props",
+      "PackagePath": "build\\SoundRockWebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SoundRockWebAPI.props",
+      "PackagePath": "buildMultiTargeting\\SoundRockWebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SoundRockWebAPI.props",
+      "PackagePath": "buildTransitive\\SoundRockWebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

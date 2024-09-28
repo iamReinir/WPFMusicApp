@@ -1,0 +1,49 @@
+﻿@page "/Index"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <h1 class="display-4 mb-4">Welcome to MusicWave</h1>
+            <p class="lead mb-5">Your new favorite destination for discovering and enjoying music online.</p>
+        </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Discover New Sounds</h5>
+                    <p class="card-text">Explore a vast library of music across all genres. Find your next favorite track or rediscover old classics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Personalized Experience</h5>
+                    <p class="card-text">Create your own musical journey with personalized playlists and recommendations tailored just for you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Anytime, Anywhere</h5>
+                    <p class="card-text">Enjoy your favorite tunes on any device, whether you're at home, work, or on the go.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+    <div class="col text-center">
+        <h2 class="h4 mb-4">Ready to dive into the world of music?</h2>
+        <a asp-page="/Track/Search" class="btn btn-primary btn-lg">
+            <i class="bi bi-search me-2"></i>Get Started Now
+        </a>
+    </div>
+</div>

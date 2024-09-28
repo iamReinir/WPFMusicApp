@@ -1,0 +1,17 @@
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\bin\Debug\net8.0\convert.bat
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\bin\Debug\net8.0\yt_to_mp3.py
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\bin\Debug\net8.0\YoutubeRec.deps.json
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\bin\Debug\net8.0\YoutubeRec.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\bin\Debug\net8.0\YoutubeRec.pdb
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.csproj.AssemblyReference.cache
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.GeneratedMSBuildEditorConfig.editorconfig
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.AssemblyInfoInputs.cache
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.AssemblyInfo.cs
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.csproj.CoreCompileInputs.cache
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\refint\YoutubeRec.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.pdb
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\ref\YoutubeRec.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\bin\Debug\net8.0\Model.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\bin\Debug\net8.0\Model.pdb
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\YoutubeRec\obj\Debug\net8.0\YoutubeRec.csproj.Up2Date

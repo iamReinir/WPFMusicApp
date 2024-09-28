@@ -1,0 +1,1 @@
+py ../yt_to_mp3.py %*

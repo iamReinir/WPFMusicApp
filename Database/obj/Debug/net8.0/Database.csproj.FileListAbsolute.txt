@@ -1,0 +1,14 @@
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\bin\Debug\net8.0\Database.deps.json
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\bin\Debug\net8.0\Database.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\bin\Debug\net8.0\Database.pdb
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.csproj.AssemblyReference.cache
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.AssemblyInfoInputs.cache
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.AssemblyInfo.cs
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.csproj.CoreCompileInputs.cache
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\refint\Database.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.pdb
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\ref\Database.dll
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\bin\Debug\net8.0\Database.runtimeconfig.json
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Database\obj\Debug\net8.0\Database.genruntimeconfig.cache

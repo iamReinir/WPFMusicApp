@@ -1,0 +1,19 @@
+@page "{id:int}"
+@model PRN_Final.Pages_Playlist.DetailsModel
+@{
+    ViewData["Title"] = "Playlist Details";
+}
+
+<h2>@Model.Playlist.Name</h2>
+
+@foreach (var playlistTrack in Model.Playlist.PlaylistTracks.OrderBy(pt => pt.Order))
+{
+    <div>
+        <h3>@playlistTrack.Track.Title</h3>
+        <audio controls>
+            <source src="https://www.youtube.com/watch?v=@playlistTrack.Track.YouTubeId" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+}
+

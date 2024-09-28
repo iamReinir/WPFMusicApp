@@ -1,0 +1,22 @@
+@page
+@model PRN_Final.Pages_Playlist.CreateModel
+
+@{
+    ViewData["Title"] = "Create Playlist";
+}
+
+<h2>Create Playlist</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Playlist.Name"></label>
+        <input asp-for="Playlist.Name" class="form-control" />
+        <span asp-validation-for="Playlist.Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="./Index">Back to List</a>
+</form>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="MusicApp.UserControls.SearchBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Name="searchBox">
+    <Border x:Name="border" CornerRadius="30" Padding="10" Margin="0 7">
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="Background" Value="#ecf4f0"/>
+            </Style>
+        </Border.Style>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Height="50" Width="50" Click="ButtonClick">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="/Images/search-icon.png"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <TextBox x:Name="txtQuery"
+                     FontSize="16" FontWeight="SemiBold" Grid.Column="1" 
+                     VerticalAlignment="Center"
+                     Padding="10" Margin="0 7"
+                     Width="400"
+                     BorderThickness="0"
+                      KeyDown="OnKeyDownHandler">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Foreground" Value="#787c7a"/>
+                        <Setter Property="Background" Value="#ecf4f0"/>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </Grid>
+    </Border>
+</UserControl>

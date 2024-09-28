@@ -1,0 +1,54 @@
+@page
+@model PRN_Final.Pages_PlaylistTrack.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlaylistTrack[0].Playlist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlaylistTrack[0].Track)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlaylistTrack[0].Order)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlaylistTrack[0].AddedAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.PlaylistTrack) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Playlist.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Track.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Order)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddedAt)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

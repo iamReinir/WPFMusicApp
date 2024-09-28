@@ -1,0 +1,7 @@
+
+D:\#Reinir\Code\CSharp\PRNProjectTeam4\Test\bin\Debug\net8.0>py yt_to_mp3.py https://www.youtube.com/watch?v=QC6j1_nhrIc 
+Downloading YouTube video:
+Title: Ryunosuke Kudo - Pride // VELVET CLOAK
+Downloading: Ryunosuke Kudo - Pride  VELVET CLOAK.mp4...
+Download completed!
+Conversion successful: Ryunosuke Kudo - Pride  VELVET CLOAK.mp4 -> Ryunosuke Kudo - Pride  VELVET CLOAK.mp3

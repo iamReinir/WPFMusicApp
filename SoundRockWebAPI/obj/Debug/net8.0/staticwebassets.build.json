@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "hYE3EMvGLtuKH2OGHm0LG75bBU2nwbe8UzRHk6xhNJw=",
+  "Source": "SoundRockWebAPI",
+  "BasePath": "_content/SoundRockWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SoundRockWebAPI\\wwwroot",
+      "Source": "SoundRockWebAPI",
+      "ContentRoot": "D:\\#Reinir\\Code\\CSharp\\PRNProjectTeam4\\SoundRockWebAPI\\wwwroot\\",
+      "BasePath": "_content/SoundRockWebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\#Reinir\\Code\\CSharp\\PRNProjectTeam4\\SoundRockWebAPI\\wwwroot\\mpeg\\sousei.mp3",
+      "SourceId": "SoundRockWebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\#Reinir\\Code\\CSharp\\PRNProjectTeam4\\SoundRockWebAPI\\wwwroot\\",
+      "BasePath": "_content/SoundRockWebAPI",
+      "RelativePath": "mpeg/sousei.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mpeg\\sousei.mp3"
+    }
+  ]
+}
